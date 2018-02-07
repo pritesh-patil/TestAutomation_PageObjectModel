@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" name="Failed suite [Login to application]">
+  <test name="create page type- blank page(failed)">
+    <parameter name="spaceName" value="Test Automation Framework"/>
+    <parameter name="pageType" value="Blank page"/>
+    <parameter name="pageAction" value="Publish"/>
+    <parameter name="pageName" value="Test Automation with Page Object Model"/>
+    <classes>
+      <class name="com.pageFactory.Actions.CreatePage_Test">
+        <methods>
+          <include name="createPage" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.pageFactory.Actions.CreatePage_Test -->
+    </classes>
+  </test> <!-- create page type- blank page(failed) -->
+  <test name="Log Out tests(failed)">
+    <parameter name="password" value="Pritesh15"/>
+    <parameter name="username" value="pritesh_patil@live.com"/>
+    <classes>
+      <class name="com.pageFactory.Actions.LogOut_Test">
+        <methods>
+          <include name="setUp"/>
+          <include name="logOut" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.pageFactory.Actions.LogOut_Test -->
+    </classes>
+  </test> <!-- Log Out tests(failed) -->
+</suite> <!-- Failed suite [Login to application] -->

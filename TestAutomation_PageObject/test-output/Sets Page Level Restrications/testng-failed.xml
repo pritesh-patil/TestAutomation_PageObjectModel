@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" name="Failed suite [Sets Page Level Restrications]">
+  <test name="Add Restriction to Existing Pages(failed)">
+    <parameter name="spaceName" value="Test Automation Framework"/>
+    <parameter name="isNamePresent" value="true"/>
+    <parameter name="pageName" value="Test Automation with Page Object Model"/>
+    <parameter name="user" value="10"/>
+    <parameter name="Restrictions" value="true"/>
+    <parameter name="RestrictionType" value="Viewing and editing restricted"/>
+    <classes>
+      <class name="com.pageFactory.Actions.HomePage_Test">
+        <methods>
+          <include name="addRestrictionToExistingPage" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.pageFactory.Actions.HomePage_Test -->
+    </classes>
+  </test> <!-- Add Restriction to Existing Pages(failed) -->
+  <test name="Log Out tests(failed)">
+    <parameter name="password" value="Pritesh15"/>
+    <parameter name="username" value="pritesh_patil@live.com"/>
+    <classes>
+      <class name="com.pageFactory.Actions.LogOut_Test">
+        <methods>
+          <include name="setUp"/>
+          <include name="logOut" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.pageFactory.Actions.LogOut_Test -->
+    </classes>
+  </test> <!-- Log Out tests(failed) -->
+</suite> <!-- Failed suite [Sets Page Level Restrications] -->

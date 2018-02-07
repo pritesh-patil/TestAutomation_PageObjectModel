@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Create Blank Space" duration-ms="63907" started-at="2018-02-05T09:25:07Z" finished-at="2018-02-05T09:26:11Z">
+    <groups>
+    </groups>
+    <test name="Login tests- SuccessFul Validation" duration-ms="18656" started-at="2018-02-05T09:25:07Z" finished-at="2018-02-05T09:25:26Z">
+      <class name="com.pageFactory.Actions.LoginPage_Test">
+        <test-method status="PASS" signature="signIn(java.util.Map)[pri:0, instance:com.pageFactory.Actions.LoginPage_Test@18be83e4]" name="signIn" duration-ms="18634" started-at="2018-02-05T14:55:07Z" data-provider="datatest" finished-at="2018-02-05T14:55:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Pritesh15, isSuccessfullLogin=true, username=pritesh_patil@live.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+      </class> <!-- com.pageFactory.Actions.LoginPage_Test -->
+    </test> <!-- Login tests- SuccessFul Validation -->
+    <test name="create blank space" duration-ms="30355" started-at="2018-02-05T09:25:26Z" finished-at="2018-02-05T09:25:56Z">
+      <class name="com.pageFactory.Actions.HomePage_Test">
+        <test-method status="PASS" signature="createBlankSpace(java.util.Map)[pri:0, instance:com.pageFactory.Actions.HomePage_Test@7cd62f43]" name="createBlankSpace" duration-ms="30350" started-at="2018-02-05T14:55:26Z" data-provider="datatest" finished-at="2018-02-05T14:55:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{spaceName=Test Automation Framework 456}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createBlankSpace -->
+      </class> <!-- com.pageFactory.Actions.HomePage_Test -->
+    </test> <!-- create blank space -->
+    <test name="Log Out tests" duration-ms="14822" started-at="2018-02-05T09:25:56Z" finished-at="2018-02-05T09:26:11Z">
+      <class name="com.pageFactory.Actions.LogOut_Test">
+        <test-method status="PASS" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.pageFactory.Actions.LogOut_Test@42e26948]" name="setUp" is-config="true" duration-ms="13861" started-at="2018-02-05T14:54:53Z" finished-at="2018-02-05T14:55:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@35a3d49f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="logOut(java.util.Map)[pri:0, instance:com.pageFactory.Actions.LogOut_Test@42e26948]" name="logOut" duration-ms="14816" started-at="2018-02-05T14:55:56Z" data-provider="datatest" finished-at="2018-02-05T14:56:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pageFactory.Actions.LogOut_Test@42e26948]" name="tearDown" is-config="true" duration-ms="990" started-at="2018-02-05T14:56:11Z" finished-at="2018-02-05T14:56:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.pageFactory.Actions.LogOut_Test -->
+    </test> <!-- Log Out tests -->
+  </suite> <!-- Create Blank Space -->
+</testng-results>

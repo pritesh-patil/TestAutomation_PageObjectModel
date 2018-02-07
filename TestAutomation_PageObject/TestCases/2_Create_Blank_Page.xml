@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<suite name="Create Pages">
+	<!-- ==================================================================================================================== -->
+	<!-- Login to application with correct credentials -->
+	<!-- ==================================================================================================================== -->
+
+	<test name="Login tests- SuccessFul Validation">
+		<dataset name="testData">
+			<parameter name="username" value="pritesh_patil@live.com" />
+			<parameter name="password" value="Pritesh15" />
+			<parameter name="isSuccessfullLogin" value="true" />
+		</dataset>
+		<classes>
+			<class name="com.pageFactory.Actions.LoginPage_Test">
+				<methods>
+					<include name="signIn" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- ==================================================================================================================== -->
+	<!-- Create Blank Page type -->
+	<!-- ==================================================================================================================== -->
+
+	<test name="create page type- blank page">
+		<dataset name="TestData">
+			<parameter name="spaceName" value="Test Automation Framework" />
+			<parameter name="pageType" value="Blank page" />
+			<parameter name="pageName" value="Test Automation with Page Object Model" />
+			<parameter name="pageAction" value="Publish" />
+		</dataset>
+		<classes>
+			<class name="com.pageFactory.Actions.CreatePage_Test">
+				<methods>
+					<include name="createPage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- ==================================================================================================================== -->
+	<!-- Logout from application -->
+	<!-- ==================================================================================================================== -->
+
+	<test name="Log Out tests">
+		<dataset name="Log Out test Data">
+			<!-- <parameter name="username" value="pritesh_patil@live.com" />
+			<parameter name="password" value="Pritesh15" /> -->
+		</dataset>
+		<classes>
+			<class name="com.pageFactory.Actions.LogOut_Test">
+				<methods>
+					<include name="logOut" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

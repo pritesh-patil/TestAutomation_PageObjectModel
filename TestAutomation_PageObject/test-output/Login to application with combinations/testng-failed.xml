@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" name="Failed suite [Login to application with combinations]">
+  <test name="Login tests-Unsuccessfull Validation(failed)">
+    <parameter name="password" value="rockstar"/>
+    <parameter name="isSuccessfullLogin" value="false"/>
+    <parameter name="username" value="pritesh_patil@live.com"/>
+    <classes>
+      <class name="com.pageFactory.Actions.LoginPage_Test">
+        <methods>
+          <include name="signIn" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.pageFactory.Actions.LoginPage_Test -->
+    </classes>
+  </test> <!-- Login tests-Unsuccessfull Validation(failed) -->
+</suite> <!-- Failed suite [Login to application with combinations] -->
